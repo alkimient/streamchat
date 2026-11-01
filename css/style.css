@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+#chat-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    max-width: 500px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
+}
+
+.message {
+    animation: fadeIn 0.3s ease-out;
+    line-height: 1.4;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    word-wrap: break-word;
+}
+
+.platform-tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin-right: 8px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.tag-twitch { background: #9146FF; color: white; }
+.tag-kick { background: #53FC18; color: black; }
+
+.username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}

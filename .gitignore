@@ -1,0 +1,10 @@
+# ASP.NET / IIS
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# OS
+Thumbs.db
+.DS_Store
